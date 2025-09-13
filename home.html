@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Studio de Tatuagem</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+	<video class="bg-video" src="./videos/videobody.mp4" autoplay loop muted playsinline></video>
+	<header>
+		<video class="header-video" src="./videos/headervideo.mp4" autoplay loop muted playsinline></video>
+		<div class="header-content">
+			<h1>Studio Tattoo</h1>
+			<nav>
+				<ul>
+					<li><a href="sobre.html">Sobre</a></li>
+					<li><a href="galeria.html">Galeria</a></li>
+					<li><a href="contato.html">Contato</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<section id="sobre">
+		<h2>Sobre o Estúdio</h2>
+		<p>Bem-vindo ao Studio Tattoo! Profissionalismo, arte e segurança em cada traço. Venha conhecer nosso espaço e artistas.</p>
+		<div class="cards-container">
+			<div class="card-servico">
+				<h3>O que oferecemos</h3>
+				<ul>
+					<li>Tatuagens exclusivas e personalizadas</li>
+					<li>Consultoria artística</li>
+					<li>Piercing e body art</li>
+					<li>Ambiente seguro e confortável</li>
+				</ul>
+			</div>
+			<div class="card-depoimento">
+				<h3>Depoimentos</h3>
+				<div class="depoimentos-cards">
+					<div class="depo-card">
+						<p>“O melhor estúdio da cidade! Atendimento nota 10.”</p>
+						<span>- Felipe S.</span>
+					</div>
+					<div class="depo-card">
+						<p>“Ambiente limpo, profissionais talentosos e muita criatividade.”</p>
+						<span>- Camila D.</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="cards-container galeria-cards">
+			<div class="card-midia">
+				<img src="img/tattoo1.jpg" alt="Tatuagem 1">
+			</div>
+			<div class="card-midia">
+				<img src="img/tattoo2.jpg" alt="Tatuagem 2">
+			</div>
+			<div class="card-midia">
+				<video src="img/videos/tattoo1.mp4" controls poster="img/tattoo1.jpg"></video>
+			</div>
+			<div class="card-midia">
+				<video src="img/videos/tattoo2.mp4" controls poster="img/tattoo2.jpg"></video>
+			</div>
+		</div>
+	</section>
+
+	<section id="galeria">
+		<h2>Galeria</h2>
+		<div class="galeria-grid">
+			<img src="img/tattoo1.jpg" alt="Tatuagem 1">
+			<img src="img/tattoo2.jpg" alt="Tatuagem 2">
+			<img src="img/tattoo3.jpg" alt="Tatuagem 3">
+			<img src="img/tattoo4.jpg" alt="Tatuagem 4">
+		</div>
+		<div class="galeria-videos">
+			<video src="img/videos/tattoo1.mp4" controls poster="img/tattoo1.jpg"></video>
+			<video src="img/videos/tattoo2.mp4" controls poster="img/tattoo2.jpg"></video>
+		</div>
+	</section>
+
+	<section id="contato">
+		<h2>Contato</h2>
+		<form>
+			<input type="text" placeholder="Seu nome" required>
+			<input type="email" placeholder="Seu e-mail" required>
+			<textarea placeholder="Sua mensagem" required></textarea>
+			<button type="submit">Enviar</button>
+		</form>
+		<div class="redes-sociais">
+			<a href="#" title="Instagram">Instagram</a> |
+			<a href="#" title="WhatsApp">WhatsApp</a>
+		</div>
+	</section>
+
+	<footer>
+		<p>&copy; 2025 Studio Tattoo. Todos os direitos reservados.</p>
+	</footer>
+</body>
+</html>
