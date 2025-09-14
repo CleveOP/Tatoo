@@ -76,9 +76,9 @@ header{
 	border-radius: 14px;
 	box-shadow: 0 4px 18px #0007;
 	padding: 24px 20px;
-	min-width: 240px;
-	max-width: 340px;
-	flex: 1 1 260px;
+	min-width: 160px;
+	max-width: 210px;
+	flex: 1 1 180px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -128,7 +128,7 @@ header{
 }
 .card-midia img, .card-midia video {
 	width: 100%;
-	max-width: 260px;
+	max-width: 180px;
 	border-radius: 10px;
 	box-shadow: 0 2px 12px #0007;
 	margin-bottom: 0;
