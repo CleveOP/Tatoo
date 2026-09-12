@@ -1,91 +1,128 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galeria - Studio Tattoo</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galeria | Studio Tattoo</title>
+    <meta name="description" content="Veja uma seleção de tatuagens e vídeos do Studio Tattoo, com trabalhos em diferentes estilos e técnicas." />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
     <video class="bg-video" src="./videos/videobody.mp4" autoplay loop muted playsinline></video>
-    <header>
-        <video class="header-video" src="./videos/headervideo.mp4" autoplay loop muted playsinline></video>
-        <div class="header-content">
-            <h1>Studio Tattoo</h1>
-            <nav>
-                <ul>
-                    <li><a href="sobre.html">Sobre</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                    <li><a href="index.html">Início</a></li>
-                </ul>
-            </nav>
-        </div>
+
+    <header class="page-header">
+      <div class="container nav-wrap">
+        <a href="index.html" class="brand" aria-label="Página inicial do Studio Tattoo">
+          <span class="brand-mark">S</span>
+          <span class="brand-copy">
+            <strong>Studio Tattoo</strong>
+            <small>Arte na pele</small>
+          </span>
+        </a>
+
+        <nav class="nav-links" aria-label="Menu do site">
+          <a href="index.html">Início</a>
+          <a href="sobre.html">Sobre</a>
+          <a href="galeria.html" class="active">Galeria</a>
+          <a href="contato.html">Contato</a>
+        </nav>
+
+        <a href="contato.html" class="nav-cta">Agendar</a>
+      </div>
     </header>
-    <section id="galeria">
-        <h2>Galeria</h2>
-        <div class="cards-container">
-            <div class="card-servico">
-                <h3>Trabalhos Recentes</h3>
-                <p>Confira alguns dos nossos trabalhos mais recentes, desde tatuagens minimalistas até projetos realistas e coloridos. Cada arte é feita com dedicação e técnica profissional.</p>
-            </div>
-            <div class="card-depoimento">
-                <h3>Depoimentos</h3>
-                <div class="depoimentos-cards">
-                    <div class="depo-card">
-                        <p>“A galeria mostra a qualidade e variedade dos estilos. Fiquei impressionado com o realismo!”</p>
-                        <span>- Diego M.</span>
-                    </div>
-                    <div class="depo-card">
-                        <p>“Escolhi meu desenho vendo os trabalhos do estúdio. Superou minhas expectativas!”</p>
-                        <span>- Ana Paula</span>
-                    </div>
-                </div>
-            </div>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <h1 class="page-title">Galeria</h1>
+          <p class="page-subtitle">
+            Confira alguns dos nossos melhores trabalhos em diferentes estilos, técnicas e expressões.
+          </p>
         </div>
-        <div class="cards-container galeria-cards">
-            <div class="card-midia">
-                <img src="./img/galeria1img.png" alt="Tatuagem 1">
-                <div class="valor-foto">R$ 350</div>
-            </div>
-            <div class="card-midia">
-                <img src="./img/galeria2img.png" alt="Tatuagem 2">
-                <div class="valor-foto">R$ 400</div>
-            </div>
-            <div class="card-midia">
-                <img src="./img/galeria3img.png" alt="Tatuagem 3">
-                <div class="valor-foto">R$ 280</div>
-            </div>
-            <div class="card-midia">
-                <img src="./img/galeria4img.png" alt="Tatuagem 4">
-                <div class="valor-foto">R$ 500</div>
-            </div>
-            <div class="card-midia">
-                <img src="./img/galeria5img.png" alt="Tatuagem 5">
-                <div class="valor-foto">R$ 320</div>
-            </div>
-            <div class="card-midia">
-                <img src="./img/galeria6img.png" alt="Tatuagem 6">
-                <div class="valor-foto">R$ 600</div>
-            </div>
-            <div class="card-midia">
-                <img src="./img/galeria7img.png" alt="Tatuagem 7">
-                <div class="valor-foto">R$ 450</div>
-            </div>
-            <div class="card-midia">
-                <img src="./img/galeria8img.png" alt="Tatuagem 8">
-                <div class="valor-foto">R$ 390</div>
-            </div>
-            <div class="card-midia">
-                <video src="./videos/videogaleria1.mp4" autoplay loop  muted playsinline controls="img/tattoo1.jpg"></video>
-            </div>
-            <div class="card-midia">
-                <video src="./videos/videogaleria2.mp4" autoplay loop muted playsinline controls ="img/tattoo2.jpg"></video>
-            </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="gallery-grid">
+            <article class="gallery-item">
+              <img src="./img/galeria1img.png" alt="Tatuagem em estilo realista" />
+              <span class="gallery-label">R$ 350</span>
+            </article>
+            <article class="gallery-item">
+              <img src="./img/galeria2img.png" alt="Tatuagem floral" />
+              <span class="gallery-label">R$ 400</span>
+            </article>
+            <article class="gallery-item">
+              <img src="./img/galeria3img.png" alt="Tatuagem minimalista" />
+              <span class="gallery-label">R$ 280</span>
+            </article>
+            <article class="gallery-item">
+              <img src="./img/galeria4img.png" alt="Tatuagem estilo blackwork" />
+              <span class="gallery-label">R$ 500</span>
+            </article>
+            <article class="gallery-item">
+              <img src="./img/galeria5img.png" alt="Tatuagem em linha fina" />
+              <span class="gallery-label">R$ 320</span>
+            </article>
+            <article class="gallery-item">
+              <img src="./img/galeria6img.png" alt="Tatuagem com detalhes ornamentais" />
+              <span class="gallery-label">R$ 600</span>
+            </article>
+            <article class="gallery-item">
+              <img src="./img/galeria7img.png" alt="Tatuagem com traços fortes" />
+              <span class="gallery-label">R$ 450</span>
+            </article>
+            <article class="gallery-item">
+              <img src="./img/galeria8img.png" alt="Tatuagem feminina em estilo ornamental" />
+              <span class="gallery-label">R$ 390</span>
+            </article>
+            <article class="gallery-item gallery-item--wide">
+              <video src="./videos/videogaleria1.mp4" autoplay loop muted playsinline controls></video>
+              <span class="gallery-label">Vídeo 01</span>
+            </article>
+            <article class="gallery-item gallery-item--wide">
+              <video src="./videos/videogaleria2.mp4" autoplay loop muted playsinline controls></video>
+              <span class="gallery-label">Vídeo 02</span>
+            </article>
+          </div>
         </div>
-    </section>
-    <footer>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <div class="brand">
+            <span class="brand-mark">S</span>
+            <span class="brand-copy">
+              <strong>Studio Tattoo</strong>
+              <small>Arte na pele</small>
+            </span>
+          </div>
+          <p>Trabalhos exclusivos, criativos e feitos com atenção máxima aos detalhes.</p>
+        </div>
+
+        <div class="footer-links">
+          <a href="index.html">Início</a>
+          <a href="sobre.html">Sobre</a>
+          <a href="contato.html">Contato</a>
+        </div>
+
+        <div class="footer-links social-list">
+          <a class="social-link" href="https://instagram.com" target="_blank" rel="noreferrer"><i class="fa-brands fa-instagram"></i> Instagram</a>
+          <a class="social-link" href="https://wa.me/5511999999999?text=Ol%C3%A1%2C%20quero%20conhecer%20mais%20trabalhos%20do%20est%C3%BAdio." target="_blank" rel="noreferrer"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+        </div>
+      </div>
+      <div class="container footer-copy">
         <p>&copy; 2025 Studio Tattoo. Todos os direitos reservados.</p>
+      </div>
     </footer>
-</body>
+  </body>
 </html>

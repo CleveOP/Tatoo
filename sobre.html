@@ -1,77 +1,169 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre o Estúdio - Studio Tattoo</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sobre | Studio Tattoo</title>
+    <meta name="description" content="Conheça o Studio Tattoo, nosso processo, valores e o ambiente criado para entregar tatuagens com máxima qualidade." />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
     <video class="bg-video" src="./videos/videobody.mp4" autoplay loop muted playsinline></video>
-    <header>
-        <video class="header-video" src="./videos/headervideo.mp4" autoplay loop muted playsinline></video>
-        <div class="header-content">
-            <h1>Studio Tattoo</h1>
-            <nav>
-                <ul>
-                    <li><a href="galeria.html">Galeria</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                    <li><a href="index.html">Início</a></li>
-                </ul>
-            </nav>
-        </div>
+
+    <header class="page-header">
+      <div class="container nav-wrap">
+        <a href="index.html" class="brand" aria-label="Página inicial do Studio Tattoo">
+          <span class="brand-mark">S</span>
+          <span class="brand-copy">
+            <strong>Studio Tattoo</strong>
+            <small>Arte na pele</small>
+          </span>
+        </a>
+
+        <nav class="nav-links" aria-label="Menu do site">
+          <a href="index.html">Início</a>
+          <a href="sobre.html" class="active">Sobre</a>
+          <a href="galeria.html">Galeria</a>
+          <a href="contato.html">Contato</a>
+        </nav>
+
+        <a href="contato.html" class="nav-cta">Agendar</a>
+      </div>
     </header>
-    <section id="sobre">
-        <h2>Sobre o Estúdio</h2>
-        <p><span style="color: brown;"> Sobre o Studio Tatoo  </span> <br><br>
-No Studio Tatoo, cada traço conta uma história. Somos mais do que um estúdio de tatuagem — somos um espaço de expressão, arte e identidade. Localizado em [sua cidade ou bairro], nosso estúdio nasceu da paixão por transformar ideias em arte na pele, com responsabilidade, técnica e criatividade. <br><br>
-<span style="color: brown;"> Arte com propósito </span> <br><br>
-Cada tatuagem que criamos é única. Trabalhamos lado a lado com nossos clientes para entender suas histórias, desejos e inspirações. Do estilo minimalista ao realismo, nossa equipe domina uma variedade de técnicas para entregar resultados que impressionam e emocionam. <br>
-<span style="color:brown"> Segurança e profissionalismo  </span><br><br>
-Seguimos rigorosamente todos os protocolos de higiene e biossegurança. Utilizamos materiais de alta qualidade e descartáveis, garantindo um ambiente seguro e acolhedor para todos. <br><br>
-<span style="color:brown"> Atendimento personalizado 🤝 </span><br><br>
-Aqui, você não é apenas mais um cliente — você é parte da nossa arte. Oferecemos consultorias individuais para ajudar na escolha do desenho, localização e estilo que melhor combinam com você.
-</p>
-        <div class="cards-container">
-            <div class="card-servico">
-                <h3>Nossos Serviços</h3>
-                <ul>
-                    <li>Tatuagem artística personalizada</li>
-                    <li>Restauração e cobertura de tatuagens</li>
-                    <li>Desenhos exclusivos e consultoria de arte</li>
-                    <li>Piercing e body art</li>
-                    <li>Atendimento com agendamento e orçamento gratuito</li>
-                </ul>
-            </div>
-            <div class="card-depoimento">
-                <h3>Depoimentos</h3>
-                <div class="depoimentos-cards">
-                    <div class="depo-card">
-                        <p>“Ambiente acolhedor, profissionais incríveis e resultado impecável! Recomendo muito.”</p>
-                        <span>- Mariana S.</span>
-                    </div>
-                    <div class="depo-card">
-                        <p>“Fiz minha primeira tattoo aqui e amei o atendimento e o cuidado com a higiene.”</p>
-                        <span>- Lucas R.</span>
-                    </div>
-                </div>
-            </div>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <h1 class="page-title">Sobre o estúdio</h1>
+          <p class="page-subtitle">
+            Mais do que um lugar para tatuar, o Studio Tattoo é um espaço de expressão,
+            técnica e acolhimento para transformar ideias em arte permanente.
+          </p>
         </div>
-        <div class="cards-container galeria-cards">
-            <div class="card-midia">
-                <img src="./img/sobrestudioimg.jpg" alt="Nosso Estúdio 1">
-            </div>
-            <div class="card-midia">
-                <img src="./img/sobrestudio2img.jpg" alt="Nosso Estúdio 2">
-            </div>
-            <div class="card-midia">
-                <video src="./videos/sobrevideostudio.mp4" autoplay loop controls poster="img/studio1.jpg"></video>
-            </div>
+      </section>
+
+      <section class="section">
+        <div class="container story-grid">
+          <div class="story-copy">
+            <h2>Arte com propósito</h2>
+            <p>
+              No Studio Tattoo, cada traço conta uma história. Nossa equipe trabalha com atenção
+              aos detalhes para criar tatuagens únicas, com estilo e personalidade que refletem
+              quem você é.
+            </p>
+            <p>
+              Seja em um desenho minimalista, uma peça realista ou um trabalho de grande impacto,
+              desenvolvemos projetos personalizados com técnica, criatividade e respeito ao seu
+              processo artístico.
+            </p>
+            <p>
+              <strong>Segurança e profissionalismo</strong> são pilares essenciais. Utilizamos
+              materiais de alta qualidade e seguimos todos os protocolos de higiene para garantir
+              conforto e confiança em cada atendimento.
+            </p>
+          </div>
+
+          <div class="info-panel">
+            <h3>Nossos diferenciais</h3>
+            <ul>
+              <li>Atendimento individual e personalizado</li>
+              <li>Consultoria de desenho e localização</li>
+              <li>Ambiente acolhedor e seguro</li>
+              <li>Estilos variados e técnicas especiais</li>
+              <li>Materiais premium e esterilização rigorosa</li>
+            </ul>
+          </div>
         </div>
-    </section>
-    <footer>
+      </section>
+
+      <section class="section alt-bg">
+        <div class="container">
+          <div class="section-header">
+            <small>Valores</small>
+            <h2>Qualidade que se vê e que se sente.</h2>
+          </div>
+
+          <div class="info-grid">
+            <article class="feature-card">
+              <div class="feature-icon"><i class="fa-solid fa-user-check"></i></div>
+              <h3>Atendimento</h3>
+              <p>Você é recebido com atenção, respeito e orientação clara em cada etapa do processo.</p>
+            </article>
+
+            <article class="feature-card">
+              <div class="feature-icon"><i class="fa-solid fa-syringe"></i></div>
+              <h3>Higiene</h3>
+              <p>Nosso ambiente e materiais respeitam rigorosos padrões de segurança e biossegurança.</p>
+            </article>
+
+            <article class="feature-card">
+              <div class="feature-icon"><i class="fa-solid fa-wand-sparkles"></i></div>
+              <h3>Criação</h3>
+              <p>Transformamos sua ideia em arte original, funcional e visualmente marcante.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <small>Ambiente</small>
+            <h2>Nosso espaço e nossa identidade.</h2>
+          </div>
+
+          <div class="gallery-grid">
+            <article class="gallery-item">
+              <img src="./img/sobrestudioimg.jpg" alt="Estúdio de tatuagem com ambiente moderno" />
+              <span class="gallery-label">Estúdio</span>
+            </article>
+            <article class="gallery-item">
+              <img src="./img/sobrestudio2img.jpg" alt="Detalhe do ambiente do estúdio" />
+              <span class="gallery-label">Ambiente</span>
+            </article>
+            <article class="gallery-item gallery-item--wide">
+              <video src="./videos/sobrevideostudio.mp4" autoplay loop muted playsinline controls></video>
+              <span class="gallery-label">Visita</span>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <div class="brand">
+            <span class="brand-mark">S</span>
+            <span class="brand-copy">
+              <strong>Studio Tattoo</strong>
+              <small>Arte na pele</small>
+            </span>
+          </div>
+          <p>Arte, técnica e acolhimento para criar uma tatuagem que te representa.</p>
+        </div>
+
+        <div class="footer-links">
+          <a href="index.html">Início</a>
+          <a href="galeria.html">Galeria</a>
+          <a href="contato.html">Contato</a>
+        </div>
+
+        <div class="footer-links social-list">
+          <a class="social-link" href="https://instagram.com" target="_blank" rel="noreferrer"><i class="fa-brands fa-instagram"></i> Instagram</a>
+          <a class="social-link" href="https://wa.me/5511999999999?text=Ol%C3%A1%2C%20quero%20saber%20mais%20sobre%20os%20servi%C3%A7os%20do%20est%C3%BAdio." target="_blank" rel="noreferrer"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+        </div>
+      </div>
+      <div class="container footer-copy">
         <p>&copy; 2025 Studio Tattoo. Todos os direitos reservados.</p>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
