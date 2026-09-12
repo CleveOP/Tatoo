@@ -27,6 +27,10 @@
           </span>
         </a>
 
+        <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">
+          <span></span>
+        </button>
+
         <nav class="nav-links" aria-label="Menu do site">
           <a href="index.html">Início</a>
           <a href="sobre.html">Sobre</a>
@@ -124,5 +128,26 @@
         <p>&copy; 2025 Studio Tattoo. Todos os direitos reservados.</p>
       </div>
     </footer>
+
+    <script>
+      const menuToggle = document.querySelector('.menu-toggle');
+      const navLinks = document.querySelector('.nav-links');
+
+      if (menuToggle && navLinks) {
+        menuToggle.addEventListener('click', () => {
+          const isOpen = navLinks.classList.toggle('is-open');
+          menuToggle.classList.toggle('is-open', isOpen);
+          menuToggle.setAttribute('aria-expanded', String(isOpen));
+        });
+
+        navLinks.querySelectorAll('a').forEach((link) => {
+          link.addEventListener('click', () => {
+            navLinks.classList.remove('is-open');
+            menuToggle.classList.remove('is-open');
+            menuToggle.setAttribute('aria-expanded', 'false');
+          });
+        });
+      }
+    </script>
   </body>
 </html>
